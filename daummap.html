@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+<title>Insert title here</title>
+<script src="http://dmaps.daum.net/map_js_init/v3.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+ 
+ <div id="map" style="width:10000px;height:7000px;"></div>
+ 
+
+ <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b944ee7d56fb0ed5afcd32dbe1c56294"></script>
+ <script>
+  debugger;
+  var container = document.getElementById('map');
+  var options = {
+   center: new daum.maps.LatLng(33.450701, 126.570667),
+   level: 3
+  };
+
+  var map = new daum.maps.Map(container, options);
+
+  map.setMapTypeId(daum.maps.MapTypeId.SKYVIEW);
+
+ </script>
+
+
+
+
+
+</body>
+
+</html>
